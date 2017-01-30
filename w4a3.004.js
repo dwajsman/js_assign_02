@@ -1,19 +1,20 @@
-let myArr = [10,20,30,40,50];
+let myArr = [10,20,30,40,50,60];
 
-add2 = function(array){
+console.log(myArr);
+	
+	let myNewArr = [];
+
+
+add2 = function(array, array2){
 
 	for (let i = array.length - 1; i >= 0; i--) {
 		
-		myNewArr.splice(i,0,(array[i]+2));
+		array2.unshift((array[i]+2));
 
-		//return newArr = []; 
-
-	}
+	};
 
 };
 
+add2(myArr, myNewArr);
 
-let myNewArr = add2(myArr);
-
-console.log(myArr);
-console.log(myNewArr);⁠⁠⁠⁠
+console.log(myNewArr);
